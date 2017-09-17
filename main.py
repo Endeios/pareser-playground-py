@@ -1,7 +1,7 @@
 '''main app for the calculator'''
 import logging
 import argparse
-import calculator
+from calculator import Calculator
 
 logging.basicConfig(
     format='[%(name)s](%(levelname)s) : %(message)s',
@@ -24,7 +24,7 @@ def main():
     if(args.verbose):
         logging.getLogger().setLevel(logging.DEBUG)
     log.debug(args)
-    calculator = calculator.Calculator()
+    calculator = Calculator()
     result = calculator.calculate(args.calculation)
     print(result)
 
