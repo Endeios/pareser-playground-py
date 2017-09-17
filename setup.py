@@ -6,6 +6,9 @@ setup(
     name="Calculator",
     version="0.5",
     packages=find_packages(),
-    scripts=['main.py'],
-    license="GPL"
+    license="GPL",
+    entry_points={
+        'console_scripts': ['calculate = app:main'],
+        'setuptools.installation': ['eggsecutable = app:main']
+    }
 )
