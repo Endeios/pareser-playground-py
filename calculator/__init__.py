@@ -1,7 +1,7 @@
 '''calculator module'''
 from lexer import Lexer
-from parser import Parser
-from parser import IntNode, PlusNode, MultNode
+from mathparser import Parser
+from mathparser import IntNode, PlusNode, MultNode
 import logging
 
 
